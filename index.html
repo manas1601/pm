@@ -1236,6 +1236,7 @@ Now come here and let me spoil you.
       return;
     }
     const q = qs[state.quizIndex];
+    delete card.dataset.answered;
     card.innerHTML = `
       <p class="quiz-progress">QUESTION ${state.quizIndex+1} / ${qs.length}</p>
       <h3 class="display-md">${q.q}</h3>
